@@ -23,10 +23,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         getWindow().requestFeature(Window.FEATURE_ACTION_BAR)
-        getSupportActionBar()!!.hide()
-        setContentView(R.layout.activity_main)
-            // actionBar!!.hide()
-        setUpView()
+//        getSupportActionBar()!!.hide()
+//        setContentView(R.layout.activity_main)
+//            // actionBar!!.hide()
+//        setUpView()
     }
 
     private fun setUpView(){
