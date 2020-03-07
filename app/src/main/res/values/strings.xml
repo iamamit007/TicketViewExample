@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TicketView</string>
+    <string name="you_are_the_host">You are the host</string>
+    <string name="piano_works">Piano Works</string>
+    <string name="cocktail">Cocktail</string>
+    <string name="cafe">Hard Rock Cafe</string>
+    <string name="text_comment">orem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="no_comments">6 Comments</string>
+    <string-array name="slots">
+        <item>Morning</item>
+        <item>Noon</item>
+        <item>Afternoon</item>
+        <item>Night</item>
+    </string-array>
+
+
+</resources>

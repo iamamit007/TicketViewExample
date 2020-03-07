@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <com.example.ticketview.utils.TicketView
+            app:ticketBorderColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/ticketView"
+
+            app:ticketOrientation="horizontal"
+            app:ticketScallopRadius="10dp"
+            app:ticketShowBorder="false"
+            app:ticketScallopPositionPercent="25"
+            app:ticketShowDivider="true"
+            app:ticketDividerType="dash"
+            app:ticketDividerPadding="0dp"
+            app:ticketElevation="14dp"/>
+        <com.example.ticketview.utils.TicketView
+            android:id="@+id/tc2"
+            app:ticketBorderColor="#FFFFFF"
+            android:layout_below="@+id/ticketView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="-12dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            app:ticketOrientation="horizontal"
+            app:ticketScallopRadius="10dp"
+            app:ticketShowBorder="false"
+            app:ticketScallopPositionPercent="20"
+            app:ticketShowDivider="true"
+            app:ticketDividerType="dash"
+            app:ticketDividerPadding="0dp"
+            app:ticketElevation="14dp"/>
+        <com.example.ticketview.utils.TicketView
+            app:ticketBorderColor="#FFFFFF"
+
+            android:id="@+id/tc3"
+            android:layout_below="@+id/tc2"
+            android:layout_width="match_parent"
+            android:layout_height="435dp"
+            android:layout_marginTop="-12dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            app:ticketOrientation="horizontal"
+            app:ticketScallopRadius="10dp"
+            app:ticketShowBorder="false"
+            app:ticketScallopPositionPercent="55"
+            app:ticketShowDivider="true"
+            app:ticketDividerType="dash"
+            app:ticketDividerPadding="0dp"
+            app:ticketElevation="14dp"/>
+
+        <include
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/layer1"
+            layout="@layout/layer_one"
+            android:layout_width="match_parent"
+            android:layout_height="87.5dp"/>
+
+        <include
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_below="@+id/layer1"
+            android:id="@+id/layer2"
+            layout="@layout/layer_two"
+            android:layout_width="match_parent"
+            android:layout_height="262.5dp"/>
+
+        <include
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_below="@+id/layer2"
+            android:id="@+id/layer3"
+            layout="@layout/layer_three"
+            android:layout_width="match_parent"
+            android:layout_height="262.5dp"/>
+
+        <include
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_below="@+id/layer3"
+            android:id="@+id/layer4"
+            layout="@layout/layer_four"
+            android:layout_width="match_parent"
+            android:layout_height="195.5dp"/>
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

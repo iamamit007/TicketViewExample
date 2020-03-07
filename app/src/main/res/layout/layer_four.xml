@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="195.5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/other_comment"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_weight="20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="50dp"
+                android:layout_centerInParent="true"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_monkee"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="0dp"
+                app:civ_shadow="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/other"
+            android:layout_weight="70"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/comment_con"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_text_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:id="@+id/header"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:textStyle="bold"
+                        android:text="Monkee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:text="05:00 Pm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/header"
+                    android:text="@string/text_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/comment_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_comments"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                   android:layout_gravity="center"
+                    android:textStyle="normal"
+                    android:text="@string/no_comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_heart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@+id/other_comment"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_weight="2"
+            android:id="@+id/p1"
+            android:layout_centerVertical="true"
+            android:layout_width="0dp"
+            android:layout_height="45dp">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="34dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/im2"
+                        app:civ_border_color="@color/colorPrimaryDark"
+                        app:civ_border_width="0dp"
+                        app:civ_shadow="false" />
+                    <ImageView
+                        android:visibility="visible"
+                        android:layout_marginTop="-8dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_width="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="30dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_checkmark_blue"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="4dp"
+        android:background="@drawable/border_input"
+        android:layout_weight="8"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_margin="4dp"
+            android:hint="Write your thoughts"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
