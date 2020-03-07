@@ -25,10 +25,9 @@ class MainActivity : AppCompatActivity() {
         getWindow().requestFeature(Window.FEATURE_ACTION_BAR)
         getSupportActionBar()!!.hide()
         setContentView(R.layout.activity_main)
-            // actionBar!!.hide()
-
         setUpView()
         getDaysAgo(7)
+        //test here in branch two
     }
 
     private fun setUpView(){
